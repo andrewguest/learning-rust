@@ -1,5 +1,5 @@
 [package]
-name = "rust-serial"
+name = "rust-serial-list-ports"
 version = "0.1.0"
 edition = "2021"
 
