@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 clap = "3.2.2"
-serialport = "4.1.0"
+serialport = "4.2.0"
