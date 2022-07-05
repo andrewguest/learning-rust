@@ -1,7 +1,7 @@
 fn main() {
     // boolean
-    let x = true;  // set 'x' to true
-    let y: bool = false;  // type hint that 'y' is going to be a boolean type and then set it to false
+    let x = true; // set 'x' to true
+    let y: bool = false; // type hint that 'y' is going to be a boolean type and then set it to false
 
     // char
     let a = 'a';
@@ -30,9 +30,9 @@ fn main() {
     // Arrays are immutable by default and even with mut, its element count cannot be changed.
     // If you are looking for a dynamic/ growable array, you can use vectors.
     let h = [1, 2, 3];
-    let i: [i32; 3] = [1, 2, 3];  // [TYPE, # of elements]
-    let mut j: [i32, 3] = [4, 5, 6];
-    j[0] = 10;  // update '4' to be '10'
+    let i: [i32; 3] = [1, 2, 3]; // [TYPE, # of elements]
+    let mut j: [i32; 3] = [4, 5, 6];
+    j[0] = 10; // update '4' to be '10'
 
     let k = [0; 5]; // [0, 0, 0, 0, 0]
 
@@ -45,12 +45,12 @@ fn main() {
     // slice
     // Dynamically-sized reference to another data structure
     let parent_arry = [1, 2, 3, 4];
-    let n = &parent_arry;  // slicing the whole array
-    let o = &parent_arry[0..4];  // from 0th position to 4th(excluding)
-    let p = &parent_arry[1..3];  // [2, 3]  (does not include the item in the 3rd place (4)
+    let n = &parent_arry; // slicing the whole array
+    let o = &parent_arry[0..4]; // from 0th position to 4th(excluding)
+    let p = &parent_arry[1..3]; // [2, 3]  (does not include the item in the 3rd place (4)
 
     // str
     // Unsized UTF-8 sequence of unicode string slices
-    let q = "Hello, world!";  // a: &'static str
-    let r: &str = "こんにちは, 世界!";  // &str is used to borrow and assign the whole array to the given variable binding.
+    let q = "Hello, world!"; // a: &'static str
+    let r: &str = "こんにちは, 世界!"; // &str is used to borrow and assign the whole array to the given variable binding.
 }
